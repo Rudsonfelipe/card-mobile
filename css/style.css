@@ -1,0 +1,341 @@
+@font-face{
+    src: url(../fontes/roboto/Roboto-Regular.ttf);
+    font-family: "Roboto-Regular";
+}
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(../fontes/roboto/Roboto-Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto-Regular";
+    background-color: #D9DFE7;  
+}
+
+/*************** inicio main *******************/
+.status--active{
+    color: #00a5dd !important;
+}
+.status--received{
+    color: green !important;
+}
+.status--waiting{
+    color: #fdaa8b !important;;
+}
+.bk-status--received{
+    background-color: green !important;
+}
+.bk-status--waiting{
+    background-color: #fdaa8b !important;
+}
+.persona1{
+    background-image: url(../images/foto-1.png);
+}
+.persona2{
+    background-image: url(../images/foto-2.png);
+}.persona3{
+    background-image: url(../images/foto-3.png);
+}                                                                                                                                                          
+
+header{
+    background-color:#00A5DD;
+    background-image: linear-gradient(180deg, #00A5DD,#46BEE6);
+    height: 150px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+header h1{
+    font-size: 22px;
+}
+header i{
+    font-size: 20px;
+}
+.page-content{
+    margin-bottom: 60px;
+}
+.search-box{
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+}
+/* div i{
+    margin: 5px; 
+} */
+
+
+/*************** inicio main *******************/
+.card{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid blue; */
+    margin-top: 5px;
+    border-bottom: 1px solid #e5e4e4;
+    padding: 20px 0;
+}
+.card-box{
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    position: relative;
+    top: -30px;
+}
+.card-title{
+    /* font-weight: bold; */
+    font-family: Roboto-Bold;
+    /* border: 1px solid blue; */
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.card-perfil1{
+    width: 55px;
+    height: 55px;
+    background-image: url(../images/foto-1.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    border-radius: 5px;
+    position: relative;
+}
+.card-counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    right: -7.5px;
+    bottom: 0px;
+    /* font-size: 12px; */
+}
+.card-perfil2{
+    width: 55px;
+    height: 55px;
+    background-image: url(../images/foto-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+}
+.card-perfil3{
+    width: 55px;
+    height: 55px;
+    background-image: url(../images/foto-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    position: relative;
+}
+/* .card-info, .card-price{
+    border: 1px solid blue;
+    font-family: Roboto-Bold;
+    padding-top: 5px;
+} */
+.card-status{
+    
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 5px;
+}
+.card-info{
+    width: 60%;
+    font-family: Roboto-Bold;
+}
+.card-price{
+    font-family: Roboto-Bold;
+    margin-top: 5px;
+}
+.card-name{
+    margin-top: 5px;
+}
+
+/*************** inicio footer *******************/
+
+.menu-bottom{
+    background-color: white;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    border-radius: 20px 20px 0 0;
+}
+.menu-item{
+    color: #D9DFE7;
+    font-size: 20px;
+}
+#page-content{
+    margin-bottom: 70px;
+}
+
+/* BreakPoint */
+
+/* Tablets */
+@media screen and (min-width:768px){
+    /* CSS do Cabecalho */
+    header{
+        /* padding-left: 30px; */
+        /* padding-right: 30px; */
+        padding: 10px 30px; 
+        height: 200px;
+    }
+    header h1{
+        font-size: 32px;
+    }
+    .search-box{
+        width:60px
+    }
+    header i{
+        font-size: 24px;
+    }
+    /* CSS do main */
+    .card-title{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .card-perfil1{
+        width: 85px;
+        height: 85px;
+    }
+    .card-perfil2{
+        width: 85px;
+        height: 85px;
+    }
+    .card-perfil3{
+        width: 85px;
+        height: 85px;
+    }
+    .card-counter{
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+    }
+    .card-name{
+        font-size: 24px;
+    }
+    .card-price{
+        font-size: 24px;
+    }
+    .card-status{
+        font-size: 18px;  
+    }
+    /* Footer */
+    .menu-bottom{
+        height: 85px;
+        border-radius: 0;
+    }
+    .menu-item{
+        font-size: 28px;
+    }
+    .card-box{
+        margin-bottom: 40px;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+}
+/* Desktop */
+@media screen and (min-width:992px) {
+    
+}
+/* Desktop */
+@media screen and (min-width:1200px) {
+    /* main */
+    .page-content{
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+        /* border: 3px solid red; */
+    }
+    .card-box{
+      display: flex; 
+      flex-wrap: wrap;
+      justify-content: space-around;
+      
+    }
+    .card{
+        width: 150px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+        border-radius: 10px;
+        transition: box-shadow 0.4s;
+        margin-top: 20px;
+    }
+    .card:hover{
+        box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+    .card-perfil{
+        width: 100px;
+        height: 100px;
+    }
+    .card-title{
+        width: 100%;
+    }
+    /* .card-info, .card-price{
+        border: 1px solid red;
+    } */
+    .card-info{
+        width: 90%;
+        margin-top: 20px;
+    }
+    .card-name{
+        font-size: 14px;
+        text-align: center;
+    }
+    .card-status{
+        font-size: 12px;
+        text-align: center;
+    }
+    .card-price{
+        margin-top: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .card-counter{
+        top: 0;
+        right: 0;
+        width: 25px;
+        height: 25px;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    .menu-botton{
+        right: 10px;
+        top: 50%;
+        bottom: auto;
+        left: auto;
+        width: 30px;
+        flex-direction: column;
+        height: 200px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    
+
+
+    
+}
